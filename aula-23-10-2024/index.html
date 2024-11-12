@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.css" type="text/css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="card w-25 mx-auto m-1">
+        <div class="card-body">
+            <label>VALOR 1</label>
+            <input id="v1" type="number" class="form-control">
+            <label>VALOR 2</label>
+            <input id="v2" type="number" class="form-control">
+            <label>RESULTADO</label>
+            <input id="resultado" type="text" class="form-control" disabled>
+            <button onclick="clicouSoma()" class="btn btn-danger mt-2 w-100">SOMAR</button>
+            <button class="btn btn-warning mt-2 w-100">SUBTRAIR</button>
+            <button class="btn btn-primary mt-2 w-100">MULTIPLICAR</button>
+            <button class="btn btn-secondary mt-2 w-100">DIVIDIR</button>
+        </div>
+    </div>
+    <script src="Calculadora.js"></script>
+</body>
+</html>
