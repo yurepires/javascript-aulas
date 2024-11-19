@@ -15,6 +15,4 @@ function somaVetor(vetor, dobra){
     return soma
 }
 
-var vetor = [3, 5, 7, 10, 12]
-
-export {dobraVetor, somaVetor}
+export default {dobraVetor, somaVetor}

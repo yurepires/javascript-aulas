@@ -1,8 +1,8 @@
 {
   "name": "lista-02",
   "version": "1.0.0",
-  "description": "\"Soma um vetor e seu dobro\"",
-  "main": "vetores.js",
+  "description": "aaaaaaaaa",
+  "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
