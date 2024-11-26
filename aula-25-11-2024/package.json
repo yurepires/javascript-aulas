@@ -1,0 +1,15 @@
+{
+  "name": "aula-25-11-2024",
+  "version": "1.0.0",
+  "description": "Aula de express framework",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yure Pires",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
