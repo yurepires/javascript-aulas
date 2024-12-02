@@ -15,7 +15,7 @@ app.get('/produtos', (req, res) => {
 })
 
 app.get('/sobre', (req, res) => {
-    res.send(home.function())
+    res.send(sobre.function())
 })
 
 app.listen(port, () => {
