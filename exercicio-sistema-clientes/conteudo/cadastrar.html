@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+    <title>Clientes</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/all.css">
+</head>
+<body>
+
+<nav class="navbar bg-success">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white" href="/">Sistema de Clientes</a>
+        <div class="dropdown">
+            <button class="btn btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-user"></i> Usuario
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#"><i class="fa-regular fa-id-card"></i> Meus Dados</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-key"></i> Alterar Senha</a></li>
+                <div class="dropdown-divider"></div>
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-right-from-bracket"></i> Sair</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <div class="card container-sm my-2">
+        <div class="p-2 d-flex justify-content-between my-2">
+            <h4>Cadastro de Cliente</h4>
+            <a href="/" class="btn btn-light"><i class="fa-solid fa-circle-chevron-left"></i> Voltar</a>
+        </div>
+        <div class="card-body">
+
+            <form>
+                <div class="row">
+                    <div class="col">
+                        <label>NOME COMPLETO</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-3">
+                        <label>CPF</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+
+                    <div class="col-3">
+                        <label>TELEFONE</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+
+                    <div class="col-6">
+                        <label>E-MAIL</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-end mt-3">
+                    <button class="btn btn-success">Salvar</button>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+<script src="/js/bootstrap.bundle.js"></script>
+</body>
+</html>

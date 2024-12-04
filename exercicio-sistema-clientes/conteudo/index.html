@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Clientes</title>
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+</head>
+<body>
+    <nav class="navbar bg-success">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="/">Sistema de Clientes</a>
+            <div class="dropdown">
+                <button class="btn btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-user"></i> Usuario
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="#"><i class="fa-regular fa-id-card"></i> Meus Dados</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-key"></i> Alterar Senha</a></li>
+                    <div class="dropdown-divider"></div>
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-right-from-bracket"></i> Sair</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row m-0">
+        <div class="col-md-3 bg-body-secondary p-4">
+            <img src="/img/foto.png" class="w-50 d-block mx-auto">
+            <h4 class="text-center mt-4">Fulando de Tal</h4>
+            <h5 class="text-center">Administrador</h5>
+        </div>
+
+        <div class="col-md-9 p-4">
+            <div class="d-flex justify-content-between bg-body-tertiary p-2">
+                <h2>Bem Vindo ao Sistema</h2>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="btn btn-sm btn-outline-success" href="/cadastrar"><i class="fa-solid fa-plus"></i> Cadastrar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-sm btn-outline-primary mx-2" href="/listar"><i class="fa-regular fa-rectangle-list"></i> Listar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-sm btn-outline-dark" href="/usuarios"><i class="fa-solid fa-users"></i> Usuarios</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="/js/bootstrap.bundle.js"></script>
+</body>
+</html>
