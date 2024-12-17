@@ -5,6 +5,7 @@ const port = 8900
 
 import handlebars from 'express-handlebars'
 import Handlebars from 'handlebars'
+import bodyParser from 'body-parser'
 import { allowInsecurePrototypeAccess } from '@handlebars/allow-prototype-access'
 
 import path from 'path'
@@ -21,6 +22,10 @@ app.set('view engine', 'handlebars')
 
 app.use(express.static(path.join(__dirname, 'public')))
 
+// configuração do bodyparser
+app.use(bodyParser.urlencoded({extended: false}))
+app.use(bodyParser.json())
+
 app.get('/', (req, res) => {
     
     var aluno = {
@@ -34,6 +39,21 @@ app.get('/', (req, res) => {
 
 app.get('/contato', (req, res) => {
     res.render('admin/contato')
+})
+
+app.get('/cadastro', (req, res) => {
+    res.render('produto/cadastro')
+})
+
+app.post('/cadastro', (req, res) => {
+    var produto = {
+        descricao: req.body.descricao,
+        preco: req.body.preco,
+        estoque: req.body.estoque,
+        status: 1,
+        foto: 'img/semfoto.png'
+    }
+    res.render('produto/detalhe', {produto})
 })
 
 app.listen(port, () => {
