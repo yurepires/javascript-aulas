@@ -1,2 +1,30 @@
-<h3>Im on index archive, my name is {{aluno.nome}}</h3>
-<h3>Nota: {{aluno.nota}}</h3>
+<div class="col-md-6 mx-auto">
+    <table class="table table-striped">
+        <tr>
+            <td>Descrição</td>
+            <td>{{produto.descricao}}</td>
+        </tr>
+        <tr>
+            <td>Preço</td>
+            <td>{{produto.preco}}</td>
+        </tr>
+        <tr>
+            <td>Estoque</td>
+            <td>{{produto.estoque}}</td>
+        </tr>
+        <tr>
+            <td>Status</td>
+            <td>{{produto.status}}</td>
+        </tr>
+    </table>
+
+    {{#each produtos}}
+        <tr>
+            <td>{{id}}</td>
+            <td>{{descricao}}</td>
+            <td>{{preco}}</td>
+            <td>{{estoque}}</td>
+        </tr>
+    {{/each}}
+
+</div>

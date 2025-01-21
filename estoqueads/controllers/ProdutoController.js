@@ -1,7 +1,10 @@
+import Produto from "../models/Produto.js"
+
 class ProdutoController {
 
-    lista = (req, res) => {
-        res.render('produto/lista')
+    index = async (req, res) => {
+        const produtos = await Produto.findAll()
+        res.render('produto/index', {produtos: produtos})
     }
 
 
