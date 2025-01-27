@@ -23,5 +23,5 @@ const Produto = banco.sequelize.define('produtos', {
     }
 })
 
-// Produto.sync() -> usado para criar a tabel no banco de dados
+// Produto.sync()  -> usado para criar a tabel no banco de dados
 export default Produto

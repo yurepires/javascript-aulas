@@ -6,7 +6,7 @@ import dotenv from 'dotenv'
 class UsuarioController {
 
     cadastrar = (req, res) => {
-        res.render('login/cadastro')
+        res.render('usuario/cadastro')
     }
 
     salvar = async (req, res) => {
@@ -22,7 +22,8 @@ class UsuarioController {
             }
 
             await Usuario.create(user)
-            return res.status(201)
+
+            return res.redirect('/produto')
         } catch (err) {
             return res.status(500)
         }
