@@ -55,8 +55,8 @@ class UsuarioController {
 
             //gera o token jwt
             //DOTENV.CONFIG NECESSÁRIO PARA ACESSAR O ARQUIVO .ENV
-            // +
-
+            dotenv.config()
+            const token = jwt.sign({id: user.id}, JWT_SECRET, {expiresIn: '5m'})
 
             
             return res.redirect('/produto')
