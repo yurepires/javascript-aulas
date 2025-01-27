@@ -1,12 +1,14 @@
-<form method="post" action="/produto/salvar">
-    <fieldset>
-        <legend>CADASTRO DE PRODUTO</legend>
-        <input placeholder='Descrição' name='descricao' type='text' class="form-control" required />
-        <input placeholder='Preço' name='preco' type="number" class="form-control" required/>
-        <input placeholder='Estoque' name="estoque" type="number" class="form-control" required/>
-        <button type='submit' class="btn btn-success mt-3">Cadastrar</button>
-    </fieldset>
-</form>
+<div class="col-md-6 mx-auto border mt-20">
+    <form method="post" action="/produto/salvar">
+        <fieldset>
+            <legend class="text-center headings-font-weight">CADASTRO DE PRODUTO</legend>
+            <input placeholder='Descrição' name='descricao' type='text' class="form-control" required />
+            <input placeholder='Preço' name='preco' type="number" class="form-control" required/>
+            <input placeholder='Estoque' name="estoque" type="number" class="form-control" required/>
+            <button type='submit' class="btn btn-success mt-3">Cadastrar</button>
+        </fieldset>
+    </form>
+</div>
 
 {{!-- <div class="col-md-6 mx-auto shadow p-3">
     <form method="post" action="/cadastro">

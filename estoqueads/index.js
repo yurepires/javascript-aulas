@@ -29,11 +29,18 @@ app.use(bodyParser.json())
 
 // rotas do sistema
 app.get('/', (req, res) => {
-    res.render('admin/index')
+    res.render('home/index')
 })
 
 import produto from './routes/produto.js'
 app.use('/produto', produto)
+
+import usuario from './routes/usuario.js'
+app.use('/usuario', usuario)
+
+import admin from './routes/admin.js'
+import auth from './middlewares/auth.js'
+app.use('/admin', auth, admin)
 
 app.listen(port, () => {
     console.log("Servidor rodando em http://localhost:" + port)
